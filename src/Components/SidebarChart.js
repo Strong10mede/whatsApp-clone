@@ -28,7 +28,7 @@ function SidebarChart({ addNewChat, name, id }) {
   const createChat = () => {
     const roomName = prompt("Please enter name for chat");
     if (roomName) {
-      //do something here with databse
+      //adding new room into database
       db.collection("rooms").add({
         name: roomName,
       });
