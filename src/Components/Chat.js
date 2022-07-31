@@ -16,6 +16,7 @@ import firebase from "firebase";
 function Chat() {
   const [seed, setSeed] = useState("");
   const [input, setInput] = useState("");
+  //roomId is having the id of that specific doc/room
   const { roomId } = useParams();
   const [roomName, setRoomName] = useState("");
   const [messages, setMessages] = useState([]);
