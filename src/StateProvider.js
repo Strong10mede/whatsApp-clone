@@ -4,6 +4,7 @@ import React, { createContext, useContext, useReducer } from "react";
 //created the context
 export const StateContext = createContext();
 
+//higher level component (intake component n produce a component)
 export const StateProvider = ({ reducer, initialState, children }) => (
   //childern is the <app/>
   //help to setup datalayer
@@ -13,4 +14,5 @@ export const StateProvider = ({ reducer, initialState, children }) => (
 );
 
 //allows to pull data from the data layer
+//we are creating a hook
 export const useStateValue = () => useContext(StateContext);
