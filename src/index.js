@@ -11,6 +11,7 @@ root.render(
   <React.StrictMode>
     {/* Stateprovider act as a datalayer  */}
     <StateProvider initialState={initialState} reducer={reducer}>
+      {/* App is the children */}
       <App />
     </StateProvider>
   </React.StrictMode>
