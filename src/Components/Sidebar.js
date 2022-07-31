@@ -8,7 +8,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { Avatar, IconButton } from "@mui/material";
 import SidebarChart from "./SidebarChart";
 import { db } from "../firebase";
-import { useSateValue, useStateValue } from "../StateProvider";
+import { useStateValue } from "../StateProvider";
 
 function Sidebar() {
   const [rooms, setRooms] = useState([]);
