@@ -8,6 +8,7 @@ export const actionTypes = {
   SET_USER: "SET_USER",
 };
 
+//takes two component the current state and action object returns the new State
 const reducer = (state, action) => {
   console.log(action);
   switch (action.type) {
