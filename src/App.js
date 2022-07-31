@@ -7,6 +7,7 @@ import Login from "./Components/Login";
 import { useStateValue } from "./StateProvider";
 
 function App() {
+  // user is inside the state, both dispatch and state are returned by useReducer
   const [{ user }, dispatch] = useStateValue();
   return (
     <div className="app">
